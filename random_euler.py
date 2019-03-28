@@ -36,4 +36,4 @@ def generate_euler(n=1):
 			phi2 += 2*np.pi
 		return phi1,Phi,phi2
 	else:
-		return [generate_Euler() for i in range(0,n)]
+		return [generate_euler() for i in range(0,n)]
