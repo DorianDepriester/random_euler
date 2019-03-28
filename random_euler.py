@@ -1,22 +1,5 @@
 import numpy as np
 
-def generate(dim):
-    """Generate a random rotation matrix.
-    Args:
-        dim (int): The dimension of the matrix.
-    Returns:
-        np.matrix: A rotation matrix.
-    Raises:
-        ValueError: If `dim` is not 2 or 3.
-    """
-    if dim == 2:
-        return generate_2d()
-    elif dim == 3:
-        return generate_3d()
-    else:
-        raise ValueError('Dimension {} is not supported. Use 2 or 3 instead.'
-                         .format(dim))
-
 def generate_3d():
     """Generate a 3D random rotation matrix.
     Returns:
