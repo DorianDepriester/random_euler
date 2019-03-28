@@ -55,3 +55,21 @@ def generate_3d():
     H = np.eye(3) - 2 * v * v.T
     M = -H * R
     return M
+
+def generate_Euler():
+	M = generate_3d()
+	Phi = np.arccos(M[2,2])
+	if Phi == 0.0:
+		phi1 = np.arctan2(-M[1,0], M[0,0])
+		phi2 = 0	
+	elif Phi == np.pi:
+		phi1 = np.arctan2(M[1,0], M[0,0])
+		phi2 = 0
+	else:
+		phi1 = np.arctan2(M[2,0], -M[2,1])
+		phi2 = np.arctan2(M[0,2], M[1,2])
+	if phi1 < 0:
+		phi1 += 2*np.pi
+	if phi2 < 0:
+		phi2 += 2*np.pi
+	return phi1,Phi,phi2
