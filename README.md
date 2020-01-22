@@ -1,8 +1,6 @@
 # RandomEuler
 
-Python random Euler angles with Bunge convention
-
-Generate random Euler angles (φ_1,ϕ,φ_2), leading to uniformly distributed rotation matrices. 
+Generate random Euler angles (φ_1,ϕ,φ_2), leading to uniformly distributed rotation matrices in Python.
 
 
 ## Usage
