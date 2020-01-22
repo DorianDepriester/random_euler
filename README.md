@@ -27,7 +27,7 @@ The output gives the random (φ_1,ϕ,φ_2) angles (in that order). By default, t
 In this case, the function returns a list containing each set of Euler angles.
 
 ## Implementation
-This function takes advantage of the SciPy's module [stats.special_ortho_group](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.special_ortho_group.html) for generating random rotation matrices. Optional arguments given to the ``random_euler()`` function are passed-by to the ``stats.special_ortho_group.rvs()`` function. Therefore, the initial seed for random genration can be set as follows:
+This function takes advantage of the SciPy's module [stats.special_ortho_group](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.special_ortho_group.html) for generating random rotation matrices. Optional arguments given to the ``random_euler()`` function are passed-by to ``stats.special_ortho_group.rvs()``. Therefore, the initial seed for random generation can be set as follows:
 
 ````python
 >>>random_euler(n=10,random_state=10)
