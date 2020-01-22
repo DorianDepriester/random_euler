@@ -41,3 +41,6 @@ This function takes advantage of the SciPy's module [stats.special_ortho_group](
  (1.718478072590325, 0.6572236020556066, 0.2676761417975663),
  (4.199879333029451, 2.0268650261126475, 0.17565495781011156),
  (4.559117731917635, 2.4700067112772754, 5.528194929190163)]
+ ````
+ 
+ Conversion from rotation matrices to Euler angles is made using the ``mat2euler()`` function, as detailed [here](https://www.researchgate.net/publication/324088567_Computing_Euler_angles_with_Bunge_convention_from_rotation_matrix).
