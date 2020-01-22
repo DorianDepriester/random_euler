@@ -1,4 +1,4 @@
-# randrot
+# RandomEuler
 
 Python random Euler angles with Bunge convention
 
